@@ -83,7 +83,7 @@ public class FenGestRentabilite extends javax.swing.JFrame {
 
         lblGestRenta.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
         lblGestRenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblGestRenta.setText("GESTION DE RENTABILITE");
+        lblGestRenta.setText("GESTION DE LA RENTABILITE");
         lblGestRenta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jTable1.setModel(new ModeleJTableGestRenta());
