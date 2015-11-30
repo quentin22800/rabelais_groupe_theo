@@ -87,10 +87,10 @@ public class FenInscription extends javax.swing.JFrame {
             }
         });
         jTable1.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 jTable1InputMethodTextChanged(evt);
+            }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
         });
         jScrollPane1.setViewportView(jTable1);
@@ -115,6 +115,11 @@ public class FenInscription extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Gestion des sessions");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
@@ -237,6 +242,13 @@ public class FenInscription extends javax.swing.JFrame {
         f1.setSize(1200, 600);
         f1.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        FenGestSession f1 = new FenGestSession();
+        f1.setTitle("Gestion des sessions");
+        f1.setSize(1200, 600);
+        f1.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
     private void renseigne()
     {
         try

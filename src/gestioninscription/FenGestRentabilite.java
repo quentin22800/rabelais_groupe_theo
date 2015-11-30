@@ -93,10 +93,10 @@ public class FenGestRentabilite extends javax.swing.JFrame {
             }
         });
         jTable1.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 jTable1InputMethodTextChanged(evt);
+            }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
         });
         jScrollPane1.setViewportView(jTable1);
@@ -167,7 +167,7 @@ public class FenGestRentabilite extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
        jPanel1.setVisible(true);
        int numero = Integer.parseInt(jTable1.getValueAt(jTable1.getSelectedRow(),0).toString());
-        try 
+        try
         {
             //On vide la JTable
             int j, k;
